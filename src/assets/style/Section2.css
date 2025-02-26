@@ -1,0 +1,40 @@
+.Section2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Section2-header h2{
+    font-size: 30px;
+}
+
+.Section2-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.Section2-item {
+    width:30%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Section2-item img{
+    width: 80%;
+    transition: 0.5s ease;
+}
+.Section2-item img:hover{
+    transform: scale(1.08);
+}
+
+@media(max-width:400px){
+    .Section2-item h3{
+        font-size: 17px;
+    }
+}

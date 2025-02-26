@@ -1,0 +1,80 @@
+.Section4{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+    /* background-color: white; */
+}
+
+.Section4-information{
+    width: 40%;
+}
+.Section4-icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Section4-icons a{
+    font-size: 35px;
+    color: rgb(27, 27, 80);
+    transition: 0.5s ease;
+}
+
+.Section4-form{
+    width: 40%;
+}
+.Section4-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+.Section4-form form input{
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.Section4-form form textarea{
+    width: 80%;
+    height: 150px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.Section4-form form button{
+    width: 30%;
+    height: 50px;
+    background-color: #2D2D2D;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.5s ease;
+
+}
+.Section4-form form button:hover{
+    transform: scale(1.08); 
+
+}
+
+
+@media(max-width:674px){
+    .Section4{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .Section4-form form{
+        align-items: center;
+    }
+    .Section4-form form button{
+        width: 80%;
+    }
+    .Section4-information{
+        width: 70%;
+    }
+    .Section4-form{
+        width: 70%;
+    }
+}

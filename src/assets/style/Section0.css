@@ -1,0 +1,173 @@
+.Section0{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.Section0-Navbar{
+    height: 8vh;
+    padding-left:30px ;
+    padding-right: 30px;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 12px rgba(0,0,0,1);
+}
+.Section0-Navbar-Words {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Section0-Navbar-Words div a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #333;
+    padding: 8px 15px;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Adding a cool underline effect */
+.Section0-Navbar-Words div a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background: #0d0909; /* Neon orange */
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+/* Hover effect */
+.Section0-Navbar-Words div a:hover {
+    color: #575555;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 1);
+}
+
+/* Expanding underline animation */
+.Section0-Navbar-Words div a:hover::after {
+    width: 100%;
+}
+
+.Section0-body {
+    height: 82vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8e8e8c8;
+}
+.Section0-image{
+    width: 40%;
+}
+.Section0-image img{
+    width: 100%;
+}
+.Section0-words{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Section0-words h2{
+    font-size: 40px;
+}
+
+
+
+.here {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    height: 60px;
+    width: 130px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.3s ease; /* Smooth transition for scale effect */
+}
+
+.here:hover {
+    transform: scale(1.2); 
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
+}
+
+.Section0-footer{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.Section0-footer-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Section0-footer-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.Section0-footer-item img {
+    width: 17%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 20PX;
+}
+
+.Section0-footer-item img:hover {
+    transform: scale(1.2); /* Increases the size by 20% on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+
+@media(max-width:1020px){
+    .Section0-words h2{
+        font-size: 30px;
+    }
+}
+@media(max-width:700px){
+    .Section0-body{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .Section0-words{
+        width: 80%;
+    }
+    .Section0-image{
+        width: 80%;
+    }
+}
+@media(max-width:800px){
+    .Section0-Navbar-Words{
+        width: 50%;
+    }
+    .Section0-words h2{
+        font-size: 25px;
+    }
+}
+@media(max-width:532px){
+    .Section0-Navbar-Words{
+        width: 70%;
+    }
+
+}
+@media(max-width:400px){
+    .Section0-words h2{
+        font-size: 22px;
+    }
+
+}
+
+
